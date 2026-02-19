@@ -74,7 +74,7 @@ export const Contact = () => {
 								required
 								rows={5}
 								value={formData.message}
-								className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white transition focus:outline-none focus:border-orange-500 focus:bg-blue-500/5 focus:shadow-[0_0_12px_rgba(249,115,22,0.4]"
+								className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white transition focus:outline-none focus:border-orange-500 focus:bg-blue-500/5 focus:shadow-[0_0_12px_rgba(249,115,22,0.2)]"
 								placeholder="Your Message..."
 								onChange={(e) =>
 									setFormData({ ...formData, message: e.target.value })
@@ -86,7 +86,7 @@ export const Contact = () => {
 						<button
 							type="submit"
 							className="
-                                w-max ml-auto flex items-center justify-center gap-2 
+                                w-max mx-auto flex items-center justify-center gap-2 
                                 bg-white/5 border border-white/10 
                                 px-6 py-3 rounded-xl 
                                 text-white font-bold 
