@@ -1,52 +1,29 @@
-# Ignore temporary and backup files
-*.tmp
-*.bak
-*.swp
-*.swo
-*.log
-*.lock
+# OS generated files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
 
-# Ignore build and output directories
-/build/
-/dist/
-/out/
-/bin/
-/generated/
+# Dependencies
+node_modules/
+package-lock.json
 
-# Ignore system-specific files
-*.cache
-*.DS_Store
-*.Spotlight-V100
-*.Trashes
-*.~lock.*
-/._*
+# IDE/Editor specific
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
 
-# Ignore version control metadata
-*.orig
-*.rej
+# Build output
+dist/
+build/
+out/
 
-# Ignore archives and compressed files
-*.zip
-*.tar
-*.gz
-*.rar
-*.7z
-
-# Ignore large binary files
-*.iso
-*.dmg
-*.exe
-*.dll
-*.so
-*.o
-*.a
-*.lib
-*.obj
-
-# Ignore user-specific configuration
-*.env
-*.config.local
-/private/
-
+# Environment variables
+.env
+.env.local
+.env.*.local
