@@ -7,6 +7,7 @@ export const Contact = () => {
 		name: "",
 		email: "",
 		message: "",
+		title: "just saying",
 	});
 
 	const handleSubmit = (e) => {
@@ -21,7 +22,7 @@ export const Contact = () => {
 			)
 			.then(() => {
 				alert("Message Sent!");
-				setFormData({ name: "", email: "", message: "" });
+				setFormData({ name: "", email: "", message: "", title: "just saying" });
 			})
 			.catch(() => alert("Oops! Something went wrong. Please try again."));
 	};
@@ -29,9 +30,9 @@ export const Contact = () => {
 	return (
 		<section
 			id="contact"
-			className="min-h-screen flex items-center justify-center py-20"
+			className="min-h-screen flex items-center justify-center py-13"
 		>
-			<div className="w-full max-w-4xl px-4 mx-auto">
+			<div className="w-full max-w-4xl px-4 py-4 mx-auto">
 				<RevealOnScroll>
 					<div className="w-full">
 						<h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-orange-500 to-red-600 bg-clip-text text-transparent text-center">
@@ -41,7 +42,7 @@ export const Contact = () => {
 
 							{/* LinkedIn */}
 							<a
-								href="#"
+								href="https://www.linkedin.com/in/rithik-rathan-992100291"
 								target="_blank"
 								rel="noopener noreferrer"
 								aria-label="LinkedIn"
@@ -56,7 +57,7 @@ export const Contact = () => {
 
 							{/* GitHub */}
 							<a
-								href="#"
+								href="https://github.com/rithikrathan"
 								target="_blank"
 								rel="noopener noreferrer"
 								aria-label="GitHub"
@@ -69,7 +70,8 @@ export const Contact = () => {
 
 							{/* YouTube */}
 							<a
-								href="#"
+
+								href="https://youtube.com/@rithikrathan?si=Y8wVygzsAutUwXCa"
 								target="_blank"
 								rel="noopener noreferrer"
 								aria-label="YouTube"
@@ -83,7 +85,8 @@ export const Contact = () => {
 
 							{/* Instagram */}
 							<a
-								href="#"
+
+								href="https://www.instagram.com/rathan_rithik?igsh=MWs3MG05Nms1NnJybA"
 								target="_blank"
 								rel="noopener noreferrer"
 								aria-label="Instagram"

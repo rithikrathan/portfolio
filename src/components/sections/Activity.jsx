@@ -98,7 +98,7 @@ export const Activity = () => {
 		<section
 			id="activity"
 			// MATCHED: Removed min-h-screen, adjusted padding, added relative
-			className="flex items-center justify-center pb-16 pt-8 overflow-hidden relative"
+			className="flex items-center justify-center pb-16 pt-2 overflow-hidden relative"
 		>
 			<div className="w-full max-w-4xl px-4 mx-auto relative z-10">
 				<RevealOnScroll>

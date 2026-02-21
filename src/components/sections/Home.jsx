@@ -4,7 +4,7 @@ export const Home = () => {
 	return (
 		<section
 			id="home"
-			className="min-h-screen flex items-center justify-center relative py-27"
+			className="min-h-screen flex items-center justify-center relative py-20"
 		>
 			<RevealOnScroll>
 				<div className="text-center z-10 px-4">
@@ -13,20 +13,19 @@ export const Home = () => {
 					</h1>
 
 					<p className="tex-gray-400 text-lg mb-8 max-w-lg mx-auto">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore similique fugit delectus molestiae ducimus rem, accusamus suscipit reiciendis corrupti, voluptate repellat. Incidunt, deserunt nam ad qui repudiandae sapiente assumenda esse.
+						CSE student interested in robotics and safety-critical software for environments where human intervention isn’t possible, I approach problems from a strong mathematical and systems perspective, learning and applying the required theory and standards to build reliable, well-reasoned software solutions.
 					</p>
 					<div className="flex justify-center space-x-4">
 						<a
 							href="#projects"
-							className="bg-orange-500 text-black py-3 px-6 rounded font-bold transition relative overflow-hidden hover:-translate-y-0.5  hover:shadow-[0_0_15px_rgba(59, 130, 246, 0.4)]"
+							className="border border-orange-500/50 text-orange-500 py-3 px-6 rounded font-medium transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59, 130, 246, 0.2)] hover:bg-orange-500/10"
 						>
 							View Projects
 						</a>
 
 						<a
 							href="#contact"
-							className="border border-orange-500/50 text-orange-500 py-3 px-6 rounded font-medium transition-all duration-200 
-             hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59, 130, 246, 0.2)] hover:bg-orange-500/10"
+							className="border border-orange-500/50 text-orange-500 py-3 px-6 rounded font-medium transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59, 130, 246, 0.2)] hover:bg-orange-500/10"
 						>
 							Contact Me
 						</a>

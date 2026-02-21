@@ -3,19 +3,20 @@ import { RevealOnScroll } from "../RevealOnScroll";
 export const About = () => {
 	const Technical = [
 		"React",
-		"Vue",
-		"TypeScript",
-		"TailwindCSS",
-		"Svelte",
+		"Processing 5",
+		"Digital electronics",
+		"Embedded systems",
+		"Robotics",
+		"Human Computer Interactions",
+		"opeating systems",
+		"Ethical hacking",
 	];
 
-	const nonTechnical = ["Node.js", "Python", "AWS", "MongoDB", "GraphQL"];
-
+	const nonTechnical = ["blender", "Physics", "Content Creation", "Biology", "Communication"];
 	return (
 		<section
 			id="about"
-			// Removed min-h-screen and reduced top padding to fix the top gap
-			className="flex flex-col items-center justify-center pb-16 pt-8 relative"
+			className="flex flex-col items-center justify-center pb-4 pt-4 relative"
 		>
 			<RevealOnScroll>
 				<div className="max-w-4xl mx-auto px-4 relative z-10 w-full">
@@ -23,17 +24,15 @@ export const About = () => {
 						About Me
 					</h2>
 
-					{/* REMOVED backdrop-blur-3xl and ADDED the same hover effects as the bottom cards */}
 					<div className="rounded-xl p-8 border-white/10 border bg-white/5 hover:border-orange-500/30 hover:shadow-[0_4px_20px_rgba(249,115,22,0.1)] hover:-translate-y-1 transition-all">
 						<p className="text-gray-300 mb-6">
-							Passionate developer with expertise in building scalable web
-							applications and creating innovative solutions.
+							Computer Science Engineering student with a passion for applying mathematical concepts through code. I enjoy exploring the intersection of technology and creativity
 						</p>
 
 						<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-							{/* Frontend Skills */}
+							{/* Technical Skills */}
 							<div className="rounded-xl p-6 bg-white/5 border-white/10 border hover:-translate-y-1 transition-all hover:border-orange-500/30 hover:shadow-[0_2px_8px_rgba(249,115,22,0.2)]">
-								<h3 className="text-xl font-bold mb-4 text-white">Frontend</h3>
+								<h3 className="text-xl font-bold mb-4 text-white">Technical skills</h3>
 								<div className="flex flex-wrap gap-2">
 									{Technical.map((tech, key) => (
 										<span
@@ -46,9 +45,9 @@ export const About = () => {
 								</div>
 							</div>
 
-							{/* Backend Skills */}
+							{/* Non-technical Skills */}
 							<div className="rounded-xl p-6 bg-white/5 border-white/10 border hover:-translate-y-1 transition-all hover:border-orange-500/30 hover:shadow-[0_2px_8px_rgba(249,115,22,0.2)]">
-								<h3 className="text-xl font-bold mb-4 text-white">Backend</h3>
+								<h3 className="text-xl font-bold mb-4 text-white">Non-Technical skills</h3>
 								<div className="flex flex-wrap gap-2">
 									{nonTechnical.map((tech, key) => (
 										<span
@@ -69,12 +68,13 @@ export const About = () => {
 							<h3 className="text-xl font-bold mb-4 text-white"> 🏫 Education </h3>
 							<ul className="list-disc list-inside text-gray-300 space-y-2">
 								<li>
-									<strong> B.S. in Computer Science </strong> - XYZ University
-									(2016-2020)
+									<strong> B.Tech. in Computer Science Engineering</strong> - Rajiv Gandhi College of Engineering and Technology, Puducherry
+									(2023 - 2027)
 								</li>
 								<li>
-									Relevant Coursework: Data Structures, Web Development, Cloud
-									Computing...
+									<strong>Relevant Coursework: </strong> Data Structures, Web Development, Cloud
+									Computing, operating systems, computer architecture, machine learning,
+									Mathematics for computer science, Cybersecurity ...
 								</li>
 							</ul>
 						</div>
@@ -85,23 +85,23 @@ export const About = () => {
 							<div className="space-y-4 text-gray-300">
 								<div>
 									<h4 className="font-semibold text-orange-400">
-										Software Engineer at ABC Corp (2020 - Present)
+										Fresher!
 									</h4>
 									<p>
-										Developed and maintained microservices for cloud-based
-										applications.
+										<strong>Open to work fulltime and part time jobs and internships </strong>
+										-- I may not be able to create a Webpage but i sure can learn mathematical concepts and apply them for problem solving and algorithm design
 									</p>
 								</div>
 
-								<div>
-									<h4 className="font-semibold text-orange-400">
-										Intern at DEF Startups (2019)
-									</h4>
-									<p>
-										Assisted in building front-end components and integration
-										REST APIs
-									</p>
-								</div>
+								{/* <div> */}
+								{/* 	<h4 className="font-semibold text-orange-400"> */}
+								{/* 		Intern at DEF Startups (2019) */}
+								{/* 	</h4> */}
+								{/* 	<p> */}
+								{/* 		Assisted in building front-end components and integration */}
+								{/* 		REST APIs */}
+								{/* 	</p> */}
+								{/* </div> */}
 							</div>
 						</div>
 					</div>

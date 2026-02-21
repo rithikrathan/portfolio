@@ -1,29 +1,37 @@
 import { RevealOnScroll } from "../RevealOnScroll";
 
+import rogue from "../../assets/rogue.png";
+import ra from "../../assets/Ra8.png";
+import assembler from "../../assets/assembler.png";
+// import proc from "../../assets/procedural.png";
+import proc from "../../assets/procedural2.png";
+
 export const Projects = () => {
 	const projects = [
 		{
 			title: "Ra8 MPU",
 			description:
-				"Custom 8-bit microprocessor architecture with accompanying hardware and software ecosystem for emulation, programming, and practical applications.",
+				"Custom 8-bit microprocessor emulator with accompanying hardware and software for programming, and practical applications.",
 			technologies: ["Verilog", "Golang", "Python", "logisim", "React", "processing5"],
-			imageUrl: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=800&auto=format&fit=crop",
+			// imageUrl: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=800&auto=format&fit=crop",
+			imageUrl: ra,
 			projectLink: "https://github.com/rithikrathan/Ra8_prototype",
 		},
 		{
 			title: "RoguePm",
 			description:
-				"Compliation of various scripts and custom programs that automates my workflow, starting from project creation, file management and scheduled snapshots",
+				"Compliation of various scripts and custom programs that automates my workflow in the commandline itself, starting from project creation, file management and scheduled snapshots",
 			technologies: ["Python", "typescript", "Golang", "bash"],
-			imageUrl: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop",
+			imageUrl: rogue,
 			projectLink: "https://github.com/rithikrathan/RoguePM",
 		},
 		{
 			title: "Mathematical and Procedural arts",
 			description:
-				"A collection of mathematical and procedural programs for the processing IDE, showcasing the beauty of mathematics and procedural generation through visually stunning art pieces.",
+				"A collection of mathematical and procedural programs for the processing IDE, showcasing the real world application of mathematics through visually stunning art pieces.",
 			technologies: ["Javascript", "Python", "Java", "Processing"],
-			imageUrl: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=800&auto=format&fit=crop",
+			// imageUrl: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=800&auto=format&fit=crop",
+			imageUrl: proc,
 			projectLink: "https://github.com/rithikrathan/p5_stuff",
 		},
 		{
@@ -31,7 +39,7 @@ export const Projects = () => {
 			description:
 				"Simple assembler for the Ra8 architecture, supporting basic instructions, labels, and macros, with a user-friendly interface for writing and testing assembly code.",
 			technologies: ["Rust"],
-			imageUrl: "https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=800&auto=format&fit=crop",
+			imageUrl: assembler,
 			projectLink: "https://github.com/rithikrathan/Ra8_Assembler-rust",
 		},
 	];
@@ -39,7 +47,7 @@ export const Projects = () => {
 	return (
 		<section
 			id="projects"
-			className="flex items-center justify-center pb-16 pt-8 relative"
+			className="flex items-center justify-center pt-16  relative"
 		>
 			<RevealOnScroll>
 				<div className="max-w-4xl mx-auto px-4 relative z-10 w-full">
